@@ -1,0 +1,193 @@
+
+@font-face {
+    font-family: "Coc";
+    src: url("Coc.ttf");
+}
+
+.sceneFirst{
+-fx-background-image:url('../Images/bg2.jpg');
+-fx-background-repeat: stretch;
+    -fx-background-size: 1200 720;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.sceneSecond{
+-fx-background-image:url('../Images/bg2.jpg');
+-fx-background-repeat: stretch;
+    -fx-maximized: true;
+        -fx-min-width: 0;
+        -fx-min-height: 0;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.mainText{
+-fx-text-fill: #FFFFFF;
+-fx-font-family: 'Times New Roman';
+
+}
+
+.CorrectAnswer{
+-fx-text-fill: #0ead05;
+-fx-font-family: 'Times New Roman';
+}
+
+.IncorrectAnswer{
+-fx-text-fill: #ff001e;
+-fx-font-family: 'Times New Roman';
+}
+
+
+
+.withFontText{
+-fx-font-family: 'Coc';
+-fx-text-fill: #9dff47;
+-fx-text-align: center;
+}
+
+.buttonAnswers{
+-fx-background-color:
+        #3c7fb1,
+        linear-gradient(#fafdfe, #e8f5fc),
+        linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 15 10 15 10;
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+}
+
+.buttonStartPlay{
+-fx-background-color:
+        #3c7fb1,
+        linear-gradient(#fafdfe, #e8f5fc),
+        linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 15 100 15 100;
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+}
+
+.buttonExit{
+-fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 10 40 10 40;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+
+.buttonStart{
+-fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+
+
+}
+.TextYellow{
+-fx-text-fill: #fcba03;
+
+}
+
+.TextGreen{
+-fx-text-fill: #fcba03;
+
+}
+
+.TextGray{
+-fx-text-fill: #949492;
+
+-fx-font-family: 'Calibri';
+}
+
+.TextGold{
+-fx-text-fill: #ffe70a;
+
+-fx-font-family: 'Calibri';
+}
+.TextGold-Gray{
+-fx-text-fill: #b0a53f;
+
+-fx-font-family: 'Calibri';
+
+}
+
+.buttonTopicSelectBtn{
+    -fx-background-color:
+        #3c7fb1,
+        linear-gradient(#fafdfe, #e8f5fc),
+        linear-gradient(#eaf6fd 0%, #fcf6d9 49%, #f7fcbd 50%, #faf7a2 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 15 90 15 90;
+    -fx-text-fill: black;
+    -fx-font-size: 13px;
+    -fx-max-width: 300px;
+    -fx-text-alignment: center;
+}
+
+.buttonAnswers:disabled{
+    -fx-opacity: 1;
+    -fx-background-color: #f3f3f3;
+}
+
+.buttonAnswers:enabled:hover {
+    -fx-cursor: hand;
+    -fx-background-color: linear-gradient(#98c1dd 0%, #85b0d6 50%, #98c1dd 100%), #c4dce0;
+}
+
+.buttonAnswers:disabled:hover {
+    -fx-cursor: default;
+    -fx-background-color: #f3f3f3;
+}
+
+.buttonAnswers:pressed {
+    -fx-background-color: #2d618a;
+    -fx-text-fill: white;
+}
+
+
+.buttonAnswers:focused {
+    -fx-focus-color: transparent;
+    -fx-background-insets: -1.4, -0.5, 0, 1;
+    -fx-background-radius: 3,2,1;
+}
+
+.buttonAnswers .label {
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+    -fx-text-overrun: ellipsis;
+}
+
+.buttonExit:pressed {
+    -fx-background-color: #630300;
+    -fx-text-fill: white;
+}
+
+.buttonStart:pressed {
+    -fx-background-color: #0c4a00;
+    -fx-text-fill: white;
+}
+
+.buttonTopicSelectBtn:pressed {
+    -fx-background-color: #8a8c00;
+    -fx-text-fill: white;
+}
+
+.buttonWhenStartSelect{
+-fx-background-color: yellow;
+-fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 15 90 15 90;
+    -fx-text-fill: black;
+    -fx-font-size: 13px;
+    -fx-max-width: 300px;
+    -fx-text-alignment: center;
+}
+

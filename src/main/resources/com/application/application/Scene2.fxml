@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" styleClass="sceneSecond" stylesheets="@..\..\..\..\..\src\main\java\com\application\CssStyle\MainStyle.css" prefWidth="1200.0"
+            xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.application.application.SceneController">
+
+    <children>
+        <Label layoutX="10.0" layoutY="680.0" styleClass="mainText" text="Game Scene">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="10.0" layoutY="50.0" styleClass="mainText" fx:id="pointLabel" text="Point: 0">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="10.0" layoutY="10.0" fx:id="currentNameText" styleClass="mainText" text="Waiting...">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="10.0" layoutY="90.0" fx:id="questionNumText" styleClass="TextYellow" text="">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Button layoutX="1030.0" layoutY="10.0" fx:id="exitGame" styleClass="buttonExit" mnemonicParsing="false" onAction="#switchToScene1" text="Back To Main">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+
+        <Label fx:id="questionLabel" styleClass="mainText" alignment="CENTER" layoutX="35.0" layoutY="150.0" prefHeight="46.0" prefWidth="1162.0"  >
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+
+        <Label styleClass="withFontText" fx:id="enterNameText" textAlignment="CENTER" layoutX="480.0" layoutY="240.0" visible="true" text="Enter your name here!">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+
+        <TextField fx:id="enterName" layoutX="510.0"  alignment="CENTER" layoutY="275.0"  visible="true" />
+
+
+        <Button layoutX="420.0" fx:id="startButton" layoutY="320.0"  alignment="CENTER" styleClass="buttonStartPlay" visible="true" onAction="#SetQuestion" text="Start Game, I am ready!">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="280.0" fx:id="ansA" layoutY="300.0" styleClass="buttonAnswers" visible="false" mnemonicParsing="false" onAction="#AnswerA" text="Answer Azamat Sadykbek" minWidth="${button1.width}" maxWidth="${button1.width}">
+            <font>
+                <Font size="15.0" />
+            </font>
+
+        </Button>
+        <Button layoutX="730.0" fx:id="ansB" layoutY="300.0" styleClass="buttonAnswers" visible="false"  mnemonicParsing="false" onAction="#AnswerB" text="Answer Azamat Sadykbek" minWidth="${button1.width}" maxWidth="${button1.width}" >
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="280.0" fx:id="ansC" layoutY="450.0" styleClass="buttonAnswers" visible="false" mnemonicParsing="false" onAction="#AnswerC" text="Answer Azamat Sadykbek" minWidth="${button1.width}" maxWidth="${button1.width}">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="730.0" fx:id="ansD" layoutY="450.0" styleClass="buttonAnswers" visible="false" mnemonicParsing="false" onAction="#AnswerD" text="Answer Azamat Sadykbek" minWidth="${button1.width}" maxWidth="${button1.width}">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button >
+
+        <Label alignment="CENTER" layoutX="41.0" layoutY="250.0" prefHeight="100.0" prefWidth="1137.0" styleClass="mainText" visible="false" fx:id="endGame" text="GAME ENDED">
+            <font>
+                <Font size="45.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="41.0" layoutY="300.0" prefHeight="100.0" prefWidth="1137.0" styleClass="TextGray" visible="false" fx:id="endSavedInfo"  text="Your game progress saved successfully!">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+
+        <Button layoutX="220.0" layoutY="550.0" styleClass="buttonWhenStartSelect" text="Program" fx:id="button1" onAction="#handleButton1Action">
+        </Button>
+        <Button layoutX="470.0" layoutY="550.0" styleClass="buttonTopicSelectBtn" text="Biology" fx:id="button2" onAction="#handleButton2Action">
+        </Button>
+        <Button layoutX="720.0" layoutY="550.0" styleClass="buttonTopicSelectBtn" text="Geograph" fx:id="button3" onAction="#handleButton3Action">
+        </Button>
+
+        <Label layoutX="220.0" layoutY="500.0" styleClass="TextYellow" fx:id="selectedTopicLabel"  text="Selected topic: ">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+
+        <Label alignment="CENTER" layoutX="41.0" layoutY="600.0" prefHeight="46.0" prefWidth="1137.0" visible="false"  styleClass="CorrectAnswer" fx:id="answerCur"  text="Correct ANSWER">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+
+
+
+    </children>
+
+
+</AnchorPane>

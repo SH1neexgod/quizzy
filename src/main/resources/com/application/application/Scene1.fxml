@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" styleClass="sceneFirst" stylesheets="@..\..\..\..\..\src\main\java\com\application\CssStyle\MainStyle.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.application.SceneController">
+    <children>
+        <Label layoutX="20.0" layoutY="10.0" styleClass="mainText" text="Hello, Player!" >
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="15.0" layoutY="680.0"   styleClass="withFontText" text="Created for the End Term!" >
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="465.0" layoutY="220.0" fx:id="mainMenuLabel" styleClass="mainText" text="MAIN MENU" >
+            <font>
+                <Font size="45.0" />
+            </font>
+        </Label>
+
+        <Button layoutX="520.0" layoutY="300.0" fx:id="startMain" styleClass="buttonStart" mnemonicParsing="false" onAction="#switchToScene2" text="Start Game">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="515.0" layoutY="420.0" fx:id="exitGameMain" styleClass="buttonExit" mnemonicParsing="false" onAction="#ExitGame" text="Exit Game">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="535.0" layoutY="360.0" fx:id="getTopsMain" styleClass="buttonStart" mnemonicParsing="false" onAction="#GetTopsByBtn" text="Get tops">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+
+
+        <Label layoutX="980.0" layoutY="10.0" styleClass="mainText" text="List of top score" >
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="1000.0" layoutY="40.0" styleClass="TextGold" fx:id="topOne" text="Top 1: null" >
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="1000.0" layoutY="70.0" styleClass="TextGold-Gray" fx:id="topTwo" text="Top 2: null" >
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="1000.0" layoutY="100.0" styleClass="TextGray" fx:id="topThree" text="Top 3: null" >
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+
+    </children>
+</AnchorPane>
